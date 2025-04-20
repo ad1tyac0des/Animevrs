@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 export function preloader() {
     const preloaderImageContainer = document.querySelector("#preloader-image");
     const preloaderImage = document.querySelector("#preloader-image img");
+    const preloaderBgText = document.querySelector(".preloader-bg-text");
 
     const sources = [
         "https://i.pinimg.com/736x/8c/9b/07/8c9b07e5f25b7776190bf9de4da60c47.jpg",
@@ -12,7 +13,7 @@ export function preloader() {
         "https://img.anime2you.de/2020/08/dxd-season1.jpg",
         "https://i.pinimg.com/736x/bc/00/33/bc00331ae9e73936150c49e80b9da44f.jpg",
         "https://www.fortressofsolitude.co.za/wp-content/uploads/2015/09/dragon-ball-z-facts.jpg",
-        "https://i.pinimg.com/736x/a6/23/03/a623030bef40aafd587adc4f5d286141.jpg",
+        "https://i.pinimg.com/736x/9e/f3/a6/9ef3a677214e300f4d037f84641c8e4b.jpg",
         "https://i.pinimg.com/736x/28/14/d3/2814d3f4b243a87d2150363729f3d732.jpg",
         "https://i.pinimg.com/736x/be/d7/4d/bed74de4acf957672d47fb53bd35dce8.jpg",
     ];
@@ -69,6 +70,15 @@ export function preloader() {
                 clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
                 duration: 1.2,
                 delay: 0.4,
+                ease: "power2.inOut"
+            });
+
+            gsap.fromTo(preloaderBgText, {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+            }, {
+                clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+                duration: 0.6,
+                delay: 0.35,
                 ease: "power2.inOut"
             });
 
