@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 export function preloader() {
     const preloaderImageContainer = document.querySelector("#preloader-image");
     const preloaderImage = document.querySelector("#preloader-image img");
@@ -46,6 +48,7 @@ export function preloader() {
         preloaderImage.style.transition = "scale 0.5s ease";
     });
     
+    const crimsonContainer = document.querySelector(".crimson-container");
     const crimsonFill = document.querySelector(".crimson-fill");
     let width = 0;
     const totalTimeToLoad = 8000; // 8000ms
@@ -59,6 +62,29 @@ export function preloader() {
             clearInterval(intervalId2);
             clearInterval(intervalId);
             reachedEnd = true;
+
+            gsap.fromTo(crimsonContainer, {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            }, {
+                clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+                duration: 1.2,
+                delay: 0.4,
+                ease: "power2.inOut"
+            });
+
+            gsap.fromTo(preloaderImage, {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+            }, {
+                clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
+                duration: 0.6,
+                delay: 0.35,
+                ease: "power2.inOut"
+            });
+
+            gsap.to("#preloader-section", {
+                display: "none",
+                delay: 1.2,
+            });
         }
     }, totalTimeToLoad / 100);
 }
