@@ -11,6 +11,8 @@ export function preloader() {
         "https://i.pinimg.com/736x/bc/00/33/bc00331ae9e73936150c49e80b9da44f.jpg",
         "https://www.fortressofsolitude.co.za/wp-content/uploads/2015/09/dragon-ball-z-facts.jpg",
         "https://i.pinimg.com/736x/a6/23/03/a623030bef40aafd587adc4f5d286141.jpg",
+        "https://i.pinimg.com/736x/28/14/d3/2814d3f4b243a87d2150363729f3d732.jpg",
+        "https://i.pinimg.com/736x/be/d7/4d/bed74de4acf957672d47fb53bd35dce8.jpg",
     ];
 
     let i = 0;
