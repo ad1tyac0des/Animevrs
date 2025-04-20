@@ -51,19 +51,17 @@ export function preloader() {
     
     const crimsonContainer = document.querySelector(".crimson-container");
     const crimsonFill = document.querySelector(".crimson-fill");
-    let width = 0;
-    const totalTimeToLoad = 8000; // 8000ms
-    crimsonFill.style.transition = "width 0.8s ease";
+    const totalTimeToLoad = 8; // 8s
 
-    let intervalId2 = setInterval(() => {
-        width += 1;
-        crimsonFill.style.width = `${width}%`;
-
-        if (width >= 99.9) {
-            clearInterval(intervalId2);
+    gsap.to(crimsonFill, {
+        width: "100%",
+        duration: totalTimeToLoad,
+        ease: "circ.in",
+        onComplete: () => {
             clearInterval(intervalId);
             reachedEnd = true;
 
+            // Remove the crimson container
             gsap.fromTo(crimsonContainer, {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
             }, {
@@ -73,6 +71,7 @@ export function preloader() {
                 ease: "power2.inOut"
             });
 
+            // Remove the background text
             gsap.fromTo(preloaderBgText, {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
             }, {
@@ -82,6 +81,7 @@ export function preloader() {
                 ease: "power2.inOut"
             });
 
+            // Remove the preloader image
             gsap.fromTo(preloaderImage, {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
             }, {
@@ -91,10 +91,11 @@ export function preloader() {
                 ease: "power2.inOut"
             });
 
+            // Compmletely remove the preloader section
             gsap.to("#preloader-section", {
                 display: "none",
                 delay: 1.2,
             });
         }
-    }, totalTimeToLoad / 100);
+    });
 }
