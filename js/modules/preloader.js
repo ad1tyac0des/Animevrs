@@ -18,7 +18,7 @@ export function preloader() {
     let i = 0;
     let intervalId = null;
     const defaultInterval = 120;
-    const hoverInterval = 700;
+    const hoverInterval = 600;
     let reachedEnd = false;
 
     function changeImage() {
@@ -48,16 +48,17 @@ export function preloader() {
     
     const crimsonFill = document.querySelector(".crimson-fill");
     let width = 0;
-    
-    const intervalId2 = setInterval(() => {
+    const totalTimeToLoad = 8000; // 8000ms
+    crimsonFill.style.transition = "width 0.8s ease";
+
+    let intervalId2 = setInterval(() => {
         width += 1;
         crimsonFill.style.width = `${width}%`;
-        crimsonFill.style.transition = "width 1s ease";
 
-        if (width >= 100) {
+        if (width >= 99.9) {
             clearInterval(intervalId2);
             clearInterval(intervalId);
             reachedEnd = true;
         }
-    }, 100);
+    }, totalTimeToLoad / 100);
 }
