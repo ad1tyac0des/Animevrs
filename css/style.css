@@ -5,3 +5,11 @@
 .flex-center {
     @apply flex items-center justify-center;
 }
+
+#logo-container h1 {
+    background: url(/assets/videos/logo-video.gif) no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
