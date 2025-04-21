@@ -34,16 +34,17 @@
 
   <!-- Main -->
   <main class="hidden relative w-full min-h-screen bg-anime-beige">
+    
     <!-- Hero Section -->
     <section id="hero-section" class="relative w-full min-h-screen bg-anime-beige">
-      <nav id="navbar" class="w-full px-10 py-8 flex items-center justify-between bg-red-400">
+      <nav id="navbar" class="w-full px-4 md:px-6 lg:px-4 xl:px-10 py-4 md:py-6 lg:py-8 flex items-center justify-between">
         <!-- Logo Container -->
         <div id="logo-container">
-          <h1 class="inline-block text-4xl font-normal font-[monument] uppercase relative">ANIMEVRS</h1>
+          <h1 class="inline-block text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal font-[monument] uppercase relative">ANIMEVRS</h1>
         </div>
 
         <!-- Navbar Links Container -->
-        <div class="flex-center gap-24 font-[be-vietnam] font-normal text-base text-anime-graphite">
+        <div class="hidden lg:flex items-center justify-center gap-16 2xl:gap-24 font-[be-vietnam] font-normal text-base text-anime-graphite">
           <a href="#">Home</a>
           <a href="#">Shows</a>
           <a href="#">Manga</a>
@@ -52,14 +53,14 @@
         </div>
 
         <!-- Navbar Buttons Container -->
-        <div class="flex-center gap-8">
+        <div class="flex-center gap-4 min-[400px]:gap-6 md:gap-8">
           <!-- Search Button -->
-          <button class="size-10 flex-center">
+          <button class="size-8 md:size-10 flex-center">
             <svg viewBox="0 0 24 24" fill="currentColor" class="size-5"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
           </button>
 
           <!-- Sign In Button -->
-          <button class="flex-center px-6 py-2 border border-anime-graphite rounded-full">
+          <button class="flex-center px-4 md:px-6 py-1 md:py-2 border border-anime-graphite rounded-full">
             <p class="font-[be-vietnam] font-normal text-base">Sign In</p>
           </button>
         </div>
