@@ -94,7 +94,24 @@ export function preloader() {
             // Compmletely remove the preloader section
             gsap.to("#preloader-section", {
                 display: "none",
+                duration: 0.3,
                 delay: 1.2,
+            });
+
+            // Show the main section
+            gsap.to("main", {
+                display: "block",
+                delay: 1.5,
+            });
+
+            // Animate the hero section
+            gsap.fromTo("#hero-section", {
+                clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)"
+            }, {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                duration: 1.2,
+                delay: 1.5,
+                ease: "power2.inOut"
             });
         }
     });
