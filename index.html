@@ -13,7 +13,7 @@
 
 <body>
   <!-- Preloader Section-->
-  <section id="preloader-section" class="relative w-full h-dvh bg-anime-beige">
+  <section id="preloader-section" class="hidden relative w-full h-dvh bg-anime-beige">
     <!-- Preloader Image Container -->
     <div class="absolute z-10 top-0 left-0 w-full h-full flex-center">
       <div id="preloader-image" class="size-32 md:size-40 lg:size-48 xl:size-60 2xl:size-64 cursor-pointer">
@@ -33,11 +33,11 @@
   </section>
 
   <!-- Main -->
-  <main class="hidden relative w-full min-h-screen bg-anime-beige">
+  <main class="relative w-full min-h-screen bg-anime-beige">
     
     <!-- Hero Section -->
-    <section id="hero-section" class="relative w-full min-h-screen bg-anime-beige">
-      <nav id="navbar" class="w-full px-4 md:px-6 lg:px-4 xl:px-10 py-4 md:py-6 lg:py-8 flex items-center justify-between">
+    <section id="hero-section" class="w-full min-h-screen bg-anime-beige px-4 md:px-6 lg:px-4 xl:px-10">
+      <nav id="navbar" class="w-full py-4 md:py-6 lg:py-8 flex items-center justify-between">
         <!-- Logo Container -->
         <div id="logo-container">
           <h1 class="inline-block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal font-[monument] uppercase relative">ANIMEVRS</h1>
@@ -56,7 +56,7 @@
         <div class="flex-center gap-4 min-[400px]:gap-6 md:gap-8">
           <!-- Search Button -->
           <button class="hidden lg:flex items-center justify-center size-8 md:size-10">
-            <svg viewBox="0 0 24 24" fill="currentColor" class="size-5"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+            <svg fill="black" class="size-[1.85rem]" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule="evenodd"></path></svg>
           </button>
 
           <!-- Hamburger Menu -->
@@ -76,6 +76,72 @@
           </button>
         </div>
       </nav>
+
+      <!-- Search Panel (For Mobile) -->
+      <div id="search-panel-mobile" class="lg:hidden w-[95%] fixed bottom-2 left-1/2 -translate-x-1/2 bg-anime-orange flex flex-col gap-6 rounded-xl px-2 py-2">
+      
+        <!-- Search By Genre Container -->
+        <div id="search-by-genre-container" class="w-full">
+          <h5 class="text-anime-white text-sm font-[be-vietnam] font-light mb-2">Search by Genre</h5>
+          <div id="search-by-genre" class="">
+            <div class="relative rounded-md overflow-hidden">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">Action</p>
+              </div>
+              <img class="size-full object-cover" src="assets/images/SearchPanel/genre1.jpg" alt="">
+            </div>
+
+            <div class="relative rounded-md overflow-hidden">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] sm:tracking-widest font-bold uppercase">Adventure</p>
+              </div>
+              <img class="size-full object-cover" src="assets/images/SearchPanel/genre2.jpg" alt="">
+            </div>
+
+            <div class="relative rounded-md overflow-hidden">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-wider sm:tracking-widest font-bold uppercase">Romance</p>
+              </div>
+              <img class="size-full object-cover" src="assets/images/SearchPanel/genre3.jpg" alt="">
+            </div>
+
+            <div class="relative rounded-md overflow-hidden">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">Sci-Fi</p>
+              </div>
+              <img class="size-full object-cover" src="assets/images/SearchPanel/genre4.jpg" alt="">
+            </div>
+
+            <div class="relative rounded-md overflow-hidden">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">Horror</p>
+              </div>
+              <img class="size-full object-cover object-[center_20%]" src="assets/images/SearchPanel/genre5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Searches Container -->
+        <div id="recent-searches-container" class="w-full">
+          <h5 class="text-anime-white text-sm font-[be-vietnam] font-light mb-2">Recent Searches</h5>
+          <div id="recent-searches" class="flex items-center flex-wrap gap-2 font-[be-vietnam] font-light text-sm text-anime-white overflow-x-auto">
+              <div class="px-3 py-1 bg-anime-crimson/90 rounded-full"><span>One Piece</span></div>
+              <div class="px-3 py-1 bg-anime-crimson/90 rounded-full"><span>Naruto</span></div>
+              <div class="px-3 py-1 bg-anime-crimson/90 rounded-full"><span>Solo Leveling</span></div>
+              <div class="px-3 py-1 bg-anime-crimson/90 rounded-full"><span>Jujutsu Kaisen</span></div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="flex items-center justify-between px-4 py-3 rounded-full border border-anime-whtie">
+          <input id="search-input-mobile" placeholder="Search" type="text" class="w-full bg-transparent font-[be-vietnam] font-normal outline-none text-anime-white text-lg">
+          <svg fill="white" class="size-7" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule="evenodd"></path></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full min-h-screen bg-blue-400 px-4 md:px-6 lg:px-4 xl:px-10">
+
     </section>
   </main>
 
