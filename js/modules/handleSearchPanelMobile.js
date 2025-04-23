@@ -1,6 +1,6 @@
 import { createTimeline } from 'animejs';
 
-export function handleSearchPanel() {
+export function handleSearchPanelMobile() {
     let isSearchPanelOpen = false;
     
     const searchButtonContainerMobile = document.querySelector('#search-button-container-mobile');
