@@ -15,6 +15,7 @@
     "vite": "^6.3.1"
   },
   "dependencies": {
+    "animejs": "^4.0.1",
     "gsap": "^3.12.7"
   }
 }
