@@ -77,6 +77,16 @@
         </div>
       </nav>
 
+
+      <!-- Search Button Container (For Mobile) -->
+      <div id="search-button-container-mobile" class="fixed bottom-4 right-6 sm:right-8 md:right-12 bg-anime-orange w-fit p-4 flex-center rounded-full lg:hidden">
+        <svg fill="white" class="size-7" viewBox="0 0 24 24">
+          <path clip-rule="evenodd"
+            d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+            fill-rule="evenodd"></path>
+        </svg>
+      </div>
+
       <!-- Search Panel (For Mobile) -->
       <div id="search-panel-mobile" class="lg:hidden w-[95%] fixed bottom-2 left-1/2 -translate-x-1/2 bg-anime-orange flex flex-col gap-6 rounded-xl px-2 py-2">
       
@@ -84,39 +94,41 @@
         <div id="search-by-genre-container" class="w-full">
           <h5 class="text-anime-white text-sm font-[be-vietnam] font-light mb-2">Search by Genre</h5>
           <div id="search-by-genre" class="">
-            <div class="relative rounded-md overflow-hidden">
-              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
-                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">Action</p>
+            <div class="relative rounded-md overflow-hidden group">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50 z-10">
+                <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">
+                  Action</p>
               </div>
-              <img class="size-full object-cover" src="assets/images/SearchPanel/genre1.jpg" alt="">
-            </div>
+              <img class="size-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                src="assets/images/SearchPanel/genre1.jpg" alt="">
+            </div> 
 
-            <div class="relative rounded-md overflow-hidden">
-              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+            <div class="relative rounded-md overflow-hidden group">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50 z-10">
                 <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] sm:tracking-widest font-bold uppercase">Adventure</p>
               </div>
-              <img class="size-full object-cover" src="assets/images/SearchPanel/genre2.jpg" alt="">
+              <img class="size-full object-cover transform transition-transform duration-500 group-hover:scale-110" src="assets/images/SearchPanel/genre2.jpg" alt="">
             </div>
 
-            <div class="relative rounded-md overflow-hidden">
-              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+            <div class="relative rounded-md overflow-hidden group">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50 z-10">
                 <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-wider sm:tracking-widest font-bold uppercase">Romance</p>
               </div>
-              <img class="size-full object-cover" src="assets/images/SearchPanel/genre3.jpg" alt="">
+              <img class="size-full object-cover transform transition-transform duration-500 group-hover:scale-110" src="assets/images/SearchPanel/genre3.jpg" alt="">
             </div>
 
-            <div class="relative rounded-md overflow-hidden">
-              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+            <div class="relative rounded-md overflow-hidden group">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50 z-10">
                 <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">Sci-Fi</p>
               </div>
-              <img class="size-full object-cover" src="assets/images/SearchPanel/genre4.jpg" alt="">
+              <img class="size-full object-cover transform transition-transform duration-500 group-hover:scale-110" src="assets/images/SearchPanel/genre4.jpg" alt="">
             </div>
 
-            <div class="relative rounded-md overflow-hidden">
-              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50">
+            <div class="relative rounded-md overflow-hidden group">
+              <div class="w-full h-full absolute top-0 left-0 flex-center bg-black/50 z-10">
                 <p class="text-anime-white text-sm sm:text-xl md:text-2xl font-[monument] tracking-widest font-bold uppercase">Horror</p>
               </div>
-              <img class="size-full object-cover object-[center_20%]" src="assets/images/SearchPanel/genre5.jpg" alt="">
+              <img class="size-full object-cover object-[center_20%] transform transition-transform duration-500 group-hover:scale-110" src="assets/images/SearchPanel/genre5.jpg" alt="">
             </div>
           </div>
         </div>
@@ -135,7 +147,15 @@
         <!-- Search Bar -->
         <div class="flex items-center justify-between px-4 py-3 rounded-full border border-anime-whtie">
           <input id="search-input-mobile" placeholder="Search" type="text" class="w-full bg-transparent font-[be-vietnam] font-normal outline-none text-anime-white text-lg">
-          <svg fill="white" class="size-7" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z" fill-rule="evenodd"></path></svg>
+          <div id="search-panel-close-button"
+            class="w-12 h-8 md:w-16 md:h-10 flex flex-col justify-center items-center cursor-pointer">
+            <div id="close-line-1-container" class="w-[60%] h-px relative rotate-45">
+              <div id="close-line-1" class="w-full h-full bg-white"></div>
+            </div>
+            <div id="close-line-2-container" class="w-[60%] h-px relative rotate-[-45deg]">
+              <div id="close-line-2" class="w-full h-full bg-white absolute top-0 right-0"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
