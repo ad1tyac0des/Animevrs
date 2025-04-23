@@ -14,6 +14,7 @@
     color: transparent;
 }
 
+/* Search Panel Mobile CSS */
 #search-input-mobile::placeholder {
     @apply text-anime-white;
 }
@@ -66,6 +67,67 @@
         grid-template-rows: 19rem 7rem 9rem;
     }
 }
+
+/* Search Panel Desktop CSS */
+
+#search-input-desktop::placeholder {
+    @apply text-anime-white;
+}
+
+#search-by-genre-desktop {
+    display: grid;
+    grid-template-columns: 1.6fr 1.7fr 1.9fr;
+    gap: .7rem;
+    grid-template-areas: 
+        "a a b"
+        "c d b"
+        "c d e";
+}
+
+#search-by-genre-desktop div:nth-child(1) {
+    grid-area: a;
+}
+
+#search-by-genre-desktop div:nth-child(2) {
+    grid-area: b;
+}
+
+#search-by-genre-desktop div:nth-child(3) {
+    grid-area: c;
+}
+
+#search-by-genre-desktop div:nth-child(4) {
+    grid-area: d;
+}
+
+#search-by-genre-desktop div:nth-child(5) {
+    grid-area: e;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #search-by-genre-desktop {
+        grid-template-rows: 15rem 6rem 8rem;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    #search-by-genre-desktop {
+        grid-template-rows: 14rem 7rem 9rem;
+    }
+}
+
+@media (min-width: 1536px) and (max-width: 1919px) {
+    #search-by-genre-desktop {
+        grid-template-rows: 12rem 5rem 8rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    #search-by-genre-desktop {
+        grid-template-rows: 18rem 7rem 12rem;
+    }
+}
+
 
 p, h1, h2, h3, h4, h5, h6, span {
     user-select: none;
