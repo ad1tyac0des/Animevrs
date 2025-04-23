@@ -6,7 +6,7 @@
     @apply flex items-center justify-center;
 }
 
-#logo-container h1 {
+#logo-container h1, #hamburger-panel-logo {
     background: url(/assets/videos/logo-video.gif) no-repeat center center;
     background-size: cover;
     -webkit-background-clip: text;
