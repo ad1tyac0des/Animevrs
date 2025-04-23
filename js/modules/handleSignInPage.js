@@ -201,18 +201,18 @@ function handleSignInPage() {
         }
     });
 
-    // For Signup Button
-    const signupBtn = document.querySelector("#signup-btn");
+    // For Signin Button
+    const signinBtn = document.querySelector("#signin-btn");
     const form = document.querySelector("form");
 
-    signupBtn.addEventListener("click", function (e) {
+    signinBtn.addEventListener("click", function (e) {
         e.preventDefault();
         if (
             nameContainer.classList.contains("input-success") &&
             emailContainer.classList.contains("input-success") &&
             passwordContainer.classList.contains("input-success")
         ) {
-            signupBtn.textContent = "Signed Up!";
+            signinBtn.textContent = "Signed In!";
             setTimeout(() => {
                 form.submit();
                 location.href = "index.html";
