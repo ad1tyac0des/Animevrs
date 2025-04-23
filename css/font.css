@@ -18,3 +18,45 @@
     font-weight: 100 900;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'besley';
+  src: url('/assets/fonts/Besley-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'besley';
+  src: url('/assets/fonts/Besley-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'besley';
+  src: url('/assets/fonts/Besley-Semi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'besley';
+  src: url('/assets/fonts/Besley-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'besley';
+  src: url('/assets/fonts/Besley-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'besley';
+  src: url('/assets/fonts/Besley-Fatface.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
