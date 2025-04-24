@@ -74,7 +74,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="hero-section" class="w-full min-h-screen bg-anime-beige px-4 md:px-6 lg:px-4 xl:px-10">
+    <section id="hero-section" class="w-full bg-anime-beige px-4 md:px-6 lg:px-4 xl:px-10 pb-4 md:pb-6 lg:pb-4 xl:pb-10">
       <nav id="navbar" class="w-full py-4 md:py-6 lg:py-8 flex items-center justify-between">
         <!-- Logo Container -->
         <div id="logo-container">
@@ -118,50 +118,351 @@
       </nav>
 
       <!-- ⭐✨ Hero Section Content Container ✨⭐ -->
-      <div id="hero-section-content-container" class="w-full min-h-screen">
-        <div id="banner-container" class="w-full">
+      <div id="hero-section-content-container" class="w-full">
+        <div id="banner-container" class="w-full relative overflow-hidden">
+          <div id="banner-slider" class="flex transition-transform duration-500">
 
-          <div id="banner-1" class="relative w-full rounded-lg overflow-hidden">
-            <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
-              <img class="size-full object-cover" src="assets/images/HeroPage/img1.jpg" alt="">
-            </div>
-            <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end">
-              <div class="banner-content-container w-full h-fit flex justify-between items-end mb-3 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
-                <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
-                  <div class="banner-heading-container">
-                    <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">One Punch Man</h1>
-                  </div>
-    
-                  <div class="banner-watch-now-button-container">
-                    <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
-                      <!-- Animated Text -->
-                      <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
-                        <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
-                          Watch Now
+            <div id="banner-1" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img1.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">One Punch Man</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
                         </span>
-                        <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
-                          Watch Now
-                        </span>
-                      </span>
-                    
-                      <!-- Icon -->
-                      <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
-                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                      </svg>
-                    </button>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
-                </div>
-    
-                <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
-                  <div class="banner-description-container">
-                    <p class="font-[be-vietnam] font-light text-base text-anime-white">The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.
-                    </p>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div id="banner-2" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img2.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">Hunter x Hunter</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">Gon, a boy from Whale Island, dreams of becoming a Hunter like his father who left him long ago.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="banner-3" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img3.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">Naruto Shippuden</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">Naruto Uzumaki trains harder than ever to become the best ninja and face the Akatsuki.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="banner-4" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img4.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">Jujutsu Kaisen</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">Yuji Itadori becomes a jujutsu sorcerer to fight curses after consuming a cursed finger.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="banner-5" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img5.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">One Piece</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">Monkey D. Luffy sails the Grand Line with his crew to find the One Piece and become the King of the Pirates.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="banner-6" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img6.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">Dragon Ball Z</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">Goku’s peaceful life ends when Beerus, the God of Destruction, comes to Earth searching for the Saiyan God.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="banner-7" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img7.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">Attack on Titan</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">After his hometown is destroyed, Eren Jaeger vows to wipe out the Titans threatening humanity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="banner-8" class="relative w-full shrink-0 rounded-lg overflow-hidden">
+              <div class="banner-image-container w-full aspect-[16/10] md:aspect-[16/9] lg:aspect-[16/8]">
+                <img class="size-full object-cover" src="assets/images/HeroPage/img8.jpg" alt="">
+              </div>
+              <div class="banner-content-wrapper w-full h-full absolute top-0 left-0 flex items-end bg-black/10">
+                <div class="banner-content-container w-full h-fit flex justify-between items-end mb-5 md:mb-6 lg:mb-8 xl:mb-12 2xl:mb-16 min-[1920px]:mb-20 mx-3 sm:mx-5 md:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16 min-[1920px]:mx-20">
+                  <div class="banner-content-container-left w-[50%] sm:w-[43%] md:w-[40%] lg:w-[38%] xl:w-[40%] min-[1920px]:w-[35%] flex flex-col gap-4">
+                    <div class="banner-heading-container">
+                      <h1 class="font-[monument] uppercase font-light text-xl sm:text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl text-anime-white leading-[1.2]">Demon Slayer</h1>
+                    </div>
+        
+                    <div class="banner-watch-now-button-container">
+                      <button class="group flex items-center gap-1 md:gap-2 bg-anime-white rounded-full px-3 py-1 md:px-4 md:py-2 overflow-hidden relative">
+                        <!-- Animated Text -->
+                        <span class="relative inline-flex overflow-hidden uppercase font-[be-vietnam] font-normal text-xs md:text-base text-anime-graphite">
+                          <span class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[160%] group-hover:skew-y-12">
+                            Watch Now
+                          </span>
+                          <span class="absolute translate-y-[164%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+                            Watch Now
+                          </span>
+                        </span>
+                      
+                        <!-- Icon -->
+                        <svg class="size-6 group-hover:translate-x-2 transition-transform duration-500 fill-anime-graphite" viewBox="0 0 16 16" xml:space="preserve">
+                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div class="banner-content-container-right hidden md:block md:w-[37%] lg:w-[27%] xl:w-[24%] 2xl:w-[20%] min-[1920px]:w-[16%]">
+                    <div class="banner-description-container">
+                      <p class="font-[be-vietnam] font-light text-base text-anime-white">In Japan’s Taisho Period, Tanjiro’s family is killed by a demon, and his sister Nezuko is turned into one.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
+          <!-- Banner Navigation -->
+          <div class="banner-nav absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1 md:gap-2 z-10">
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/70 transition-all duration-300" data-index="0"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="1"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="2"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="3"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="4"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="5"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="6"></button>
+            <button class="banner-dot size-1.5 md:size-3 rounded-full bg-anime-white/40 transition-all duration-300" data-index="7"></button>
+          </div>
         </div>
       </div>
 
