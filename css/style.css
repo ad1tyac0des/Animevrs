@@ -129,12 +129,14 @@
 }
 
 
-p, h1, h2, h3, h4, h5, h6, span {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
+@media (max-width: 768px) {
+    p, h1, h2, h3, h4, h5, h6, span {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
 }
