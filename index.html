@@ -109,10 +109,14 @@
           </div>
 
           <!-- Sign In Button -->
-          <a href="signin.html">
-            <button class="flex-center px-4 md:px-6 py-[0.3rem] md:py-2 border border-anime-graphite rounded-full">
+          <a id="signin-page-link" href="signin.html">
+            <button id="signin-button" class="flex items-center justify-center px-4 md:px-6 py-[0.3rem] md:py-2 border border-anime-graphite rounded-full">
               <p class="font-[be-vietnam] font-normal text-sm md:text-base">Sign In</p>
             </button>
+
+            <div id="pfp-container" class="hidden items-center justify-center size-10 md:size-12 border rounded-full overflow-hidden">
+                <img class="size-full object-cover hover:scale-110 transition-transform duration-300" src="assets/images/pfp.png">
+            </div>
           </a>
         </div>
       </nav>

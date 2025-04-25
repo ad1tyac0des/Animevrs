@@ -213,6 +213,7 @@ function handleSignInPage() {
             passwordContainer.classList.contains("input-success")
         ) {
             signinBtn.textContent = "Signed In!";
+            localStorage.setItem("isSignedIn", "true");
             setTimeout(() => {
                 form.submit();
                 location.href = "index.html";
