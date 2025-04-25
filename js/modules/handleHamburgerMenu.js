@@ -3,6 +3,7 @@ import { createTimeline, stagger } from 'animejs';
 export function handleHamburgerMenu() {
     const hamburgerMenu = document.querySelector("#hamburger-menu");
     const hamburgerPanelCloseButton = document.querySelector("#hamburger-panel-close-button");
+    const hamburgerPanelLinks = document.querySelectorAll("#hamburger-panel-links a");
 
     let isOpen = false;
 
@@ -86,5 +87,14 @@ export function handleHamburgerMenu() {
         closeHamburgerMenu();
         isOpen = false;
         toggleBodyScroll();
+    });
+
+    // close hamburger panel on clicking links
+    hamburgerPanelLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            closeHamburgerMenu();
+            isOpen = false;
+            toggleBodyScroll();
+        });
     });
 }
