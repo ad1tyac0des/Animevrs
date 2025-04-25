@@ -1,4 +1,6 @@
 import { gsap } from "gsap";
+import { handleFixedMangaContainer } from "./handleFixedMangaContainer.js";
+import { handleMangaSectionHeight } from "./handleMangaSectionHeight.js";
 
 export function preloader() {
     const preloaderImageContainer = document.querySelector("#preloader-image");
@@ -51,7 +53,7 @@ export function preloader() {
     
     const crimsonContainer = document.querySelector(".crimson-container");
     const crimsonFill = document.querySelector(".crimson-fill");
-    const totalTimeToLoad = 8; // 8s
+    const totalTimeToLoad = 1; // 8s
 
     gsap.to(crimsonFill, {
         width: "100%",
@@ -102,10 +104,14 @@ export function preloader() {
             gsap.to("main", {
                 display: "block",
                 delay: 1.5,
+                onComplete: () => {
+                    handleMangaSectionHeight();
+                    handleFixedMangaContainer();
+                }
             });
 
             // Animate the hero section
-            gsap.fromTo("#hero-section", {
+            gsap.fromTo("main", {
                 clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)"
             }, {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
