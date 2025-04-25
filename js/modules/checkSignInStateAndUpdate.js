@@ -13,7 +13,7 @@ export function checkSignInStateAndUpdate() {
         pfpContainer.classList.remove("hidden");
         pfpContainer.classList.add("flex");
         signinButton.classList.add("hidden");
-        signinPageLink.href = "#";
+        signinPageLink.href = "";
         
         if (dropdownUsername && dropdownEmail) {
             dropdownUsername.textContent = username;
