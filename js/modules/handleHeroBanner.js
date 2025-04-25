@@ -9,6 +9,8 @@ export function handleHeroBanner() {
     // Set initial active dot
     bannerDots[0].classList.replace("bg-anime-white/40", "bg-anime-white/70");
 
+    bannerSlider.style.cursor = "grab";
+    
     // Update slider position
     function updateSliderPosition() {
         bannerSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -45,6 +47,7 @@ export function handleHeroBanner() {
         startX = e.clientX;
         isDragging = true;
         bannerSlider.style.transition = "none";
+        bannerSlider.style.cursor = "grabbing";
     }
 
     function drag(e) {
@@ -64,6 +67,7 @@ export function handleHeroBanner() {
         if (!isDragging) return;
         isDragging = false;
         bannerSlider.style.transition = "transform 500ms";
+        bannerSlider.style.cursor = "grab";
 
         if (moveX) {
             const diff = moveX - startX;
