@@ -7,6 +7,7 @@ import { handleHeroBanner } from './modules/handleHeroBanner.js';
 import { checkSignInStateAndUpdate } from './modules/checkSignInStateAndUpdate.js';
 import { handleSignOutBtn } from './modules/handleSignOutBtn.js';
 import { handlePfpDropdown } from './modules/handlePfpDropdown.js';
+import { handleFixedMangaContainer } from './modules/handleFixedMangaContainer.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // preloader();
@@ -17,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
     checkSignInStateAndUpdate();
     handleSignOutBtn();
     handlePfpDropdown();
+    handleFixedMangaContainer();
 });
