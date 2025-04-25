@@ -8,6 +8,7 @@ import { checkSignInStateAndUpdate } from './modules/checkSignInStateAndUpdate.j
 import { handleSignOutBtn } from './modules/handleSignOutBtn.js';
 import { handlePfpDropdown } from './modules/handlePfpDropdown.js';
 import { handleFixedMangaContainer } from './modules/handleFixedMangaContainer.js';
+import { handleMangaSectionHeight } from './modules/handleMangaSectionHeight.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // preloader();
@@ -19,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
     handleSignOutBtn();
     handlePfpDropdown();
     handleFixedMangaContainer();
+    handleMangaSectionHeight();
 });
