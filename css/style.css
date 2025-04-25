@@ -142,22 +142,17 @@ p, h1, h2, h3, h4, h5, h6, span {
 .card-container::-webkit-scrollbar {
     scrollbar-width: none;
 }
-
-
 .card-black-overlay .overlay {
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
 }
-
 .card-black-overlay .text-overlay {
 
     transition: opacity 0.3s ease;
 }
-
 .card-black-overlay:hover .overlay {
     background-color: rgba(0, 0, 0, 0.25);
 }
-
 .card-black-overlay:hover .text-overlay {
     opacity: 1;
 }
