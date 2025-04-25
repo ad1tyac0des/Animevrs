@@ -21,7 +21,7 @@ export function handleFixedMangaContainer() {
         y: 20, 
         scrollTrigger: {
             trigger: mangaSection,
-            start: "7% 80%",
+            start: "2% 80%",
             toggleActions: "play none none reverse",
             // markers: true
         }
@@ -32,7 +32,7 @@ export function handleFixedMangaContainer() {
         y: 20, 
         scrollTrigger: {
             trigger: mangaSection,
-            start: "10% 80%",
+            start: "3% 80%",
             toggleActions: "play none none reverse",
             // markers: true
         }
@@ -43,7 +43,7 @@ export function handleFixedMangaContainer() {
         y: 20, 
         scrollTrigger: {
             trigger: mangaSection,
-            start: "20% 80%",
+            start: "7% 80%",
             toggleActions: "play none none reverse",
             // markers: true
         }
