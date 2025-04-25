@@ -25,7 +25,7 @@ body::-webkit-scrollbar-track {
 
 #logo-container h1,
 #hamburger-panel-logo {
-    background: url(/assets/videos/logo-video.gif) no-repeat center center;
+    background: url(../assets/videos/logo-video.gif) no-repeat center center;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;

@@ -125,7 +125,7 @@ main {
     text-align: center;
     display: block;
     font-weight: 400;
-    background: url(/assets/videos/logo-video.gif) no-repeat center center;
+    background: url(../assets/videos/logo-video.gif) no-repeat center center;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
