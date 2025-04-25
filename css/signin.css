@@ -29,7 +29,7 @@ main {
 /* Left Section */
 #signup-container {
     position: relative;
-    background: url("/assets/images/SignInPage/main.png");
+    background: url("../assets/images/SignInPage/main.png");
     background-size: cover;
     background-position: 90% center;
     border-radius: 4px;
