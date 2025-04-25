@@ -121,6 +121,60 @@
         </div>
       </nav>
 
+      <!-- PFP Dropdown Container -->
+      <div id="pfp-dropdown" class="hidden absolute top-16 sm:top-20 right-4 md:right-6 lg:right-4 xl:right-10 z-20 w-64 md:w-72 bg-anime-beige rounded-lg shadow-lg border border-anime-graphite/20 overflow-hidden opacity-0 transition-all duration-300">
+        <!-- User Info Section -->
+        <div class="px-4 py-4 border-b border-anime-graphite/10">
+          <div class="flex items-center gap-3">
+            <div class="size-12 md:size-14 rounded-full overflow-hidden">
+              <img id="dropdown-pfp" src="assets/images/pfp.png" alt="Profile" class="size-full object-cover">
+            </div>
+            <div class="flex flex-col">
+              <h3 id="dropdown-username" class="font-[monument] text-sm md:text-base text-anime-graphite">Username</h3>
+              <p id="dropdown-email" class="font-[be-vietnam] text-xs text-anime-graphite/70">username@example.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="px-2 py-2">
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-anime-graphite/5 transition-colors duration-200">
+            <div class="flex items-center gap-3">
+              <svg class="size-5 fill-anime-graphite/80" viewBox="0 0 24 24">
+                <path d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6 8a6 6 0 1 1 12 0A6 6 0 0 1 6 8zm2 10a3 3 0 0 0-3 3 1 1 0 1 1-2 0 5 5 0 0 1 5-5h8a5 5 0 0 1 5 5 1 1 0 1 1-2 0 3 3 0 0 0-3-3H8z"/>
+              </svg>
+              <span class="font-[be-vietnam] text-sm text-anime-graphite">Profile</span>
+            </div>
+          </a>
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-anime-graphite/5 transition-colors duration-200">
+            <div class="flex items-center gap-3">
+              <svg class="size-5 fill-anime-graphite/80" viewBox="0 0 24 24">
+                <path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33-3.75-8.33-8.33-8.33zm0 15c-3.67 0-6.67-3-6.67-6.67s3-6.67 6.67-6.67 6.67 3 6.67 6.67-3 6.67-6.67 6.67zm1-7.5h2.5c.42 0 .75-.33.75-.75s-.33-.75-.75-.75h-2.5v-2.5c0-.42-.33-.75-.75-.75s-.75.33-.75.75v2.5h-2.5c-.42 0-.75.33-.75.75s.33.75.75.75h2.5v2.5c0 .42.33.75.75.75s.75-.33.75-.75v-2.5z"/>
+              </svg>
+              <span class="font-[be-vietnam] text-sm text-anime-graphite">Watchlist</span>
+            </div>
+          </a>
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-anime-graphite/5 transition-colors duration-200">
+            <div class="flex items-center gap-3">
+              <svg class="size-5 fill-anime-graphite/80" viewBox="0 0 24 24">
+                <path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+              </svg>
+              <span class="font-[be-vietnam] text-sm text-anime-graphite">Settings</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Sign Out Button -->
+        <div class="px-4 py-3 border-t border-anime-graphite/10">
+          <button id="signout-button" class="w-full py-2 px-3 flex items-center justify-center gap-2 border border-anime-crimson rounded-md hover:bg-anime-crimson hover:text-anime-white group transition-all duration-300">
+            <svg class="size-5 fill-anime-crimson group-hover:fill-anime-white transition-colors duration-300" viewBox="0 0 24 24">
+              <path d="M5 5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7v-2H5V5zm16 7l-4-4v3H9v2h8v3l4-4z"/>
+            </svg>
+            <span class="font-[be-vietnam] text-sm font-medium text-anime-crimson group-hover:text-anime-white transition-colors duration-300">Sign Out</span>
+          </button>
+        </div>
+      </div>
+
       <!-- ⭐✨ Hero Section Content Container ✨⭐ -->
       <div id="hero-section-content-container" class="w-full">
         <div id="banner-container" class="w-full relative overflow-hidden">

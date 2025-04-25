@@ -4,7 +4,9 @@ import { handleSearchPanelMobile } from './modules/handleSearchPanelMobile.js';
 import { handleSearchPanelDesktop } from './modules/handleSearchPanelDesktop.js';
 import { handleHamburgerMenu } from './modules/handleHamburgerMenu.js';
 import { handleHeroBanner } from './modules/handleHeroBanner.js';
-import { checkSignInState } from './modules/checkSignInState.js';
+import { checkSignInStateAndUpdate } from './modules/checkSignInStateAndUpdate.js';
+import { handleSignOutBtn } from './modules/handleSignOutBtn.js';
+import { handlePfpDropdown } from './modules/handlePfpDropdown.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // preloader();
@@ -12,5 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleSearchPanelDesktop();
     handleHamburgerMenu();
     handleHeroBanner();
-    checkSignInState();
+    checkSignInStateAndUpdate();
+    handleSignOutBtn();
+    handlePfpDropdown();
 });

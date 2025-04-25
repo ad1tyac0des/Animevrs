@@ -314,6 +314,10 @@ form button {
         gap: 2.4vw;
     }
 
+    input {
+        padding: 0 0.7rem !important;
+    }
+
     .input-container {
         width: 85%;
         height: 20%;
@@ -338,5 +342,15 @@ form button {
 
     #terms-and-conditions {
         font-size: clamp(8px, .4vw, 10px);
+    }
+
+    p, h1, h2, h3, h4, h5, h6, span {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
     }
 }

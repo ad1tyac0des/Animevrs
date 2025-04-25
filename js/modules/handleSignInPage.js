@@ -214,6 +214,8 @@ function handleSignInPage() {
         ) {
             signinBtn.textContent = "Signed In!";
             localStorage.setItem("isSignedIn", "true");
+            localStorage.setItem("username", nameInput.value);
+            localStorage.setItem("email", emailInput.value);
             setTimeout(() => {
                 form.submit();
                 location.href = "index.html";
