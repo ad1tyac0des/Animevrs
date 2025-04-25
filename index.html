@@ -1131,8 +1131,28 @@
       </div>
     </section>
 
-    <section class="w-full h-screen bg-anime-graphite">
+    <section id="movies-section" class="border-2 border-red-500 w-full h-screen bg-anime-beige px-4 md:px-6 lg:px-4 xl:px-10">
 
+      <div id="movies-heading" class="flex-between px-4 md:px-0">
+        <h1 class="font-[be-vietnam] font-normal text-base  lg:text-xl">Movies</h1>
+        <p
+          class="font-[be-vietnam] cursor-pointer font-normal text-sm md:text-base lg:text-lg border border-anime-graphite rounded-full px-4 py-1">
+          See All</p>
+      </div>
+
+      <div id="movies-container"
+        class="card-container w-full flex gap-4 md:justify-between overflow-x-auto px-4 md:px-0 mt-4 md:mt-10">
+      
+        <div
+          class="movie-item card-black-overlay shrink-0 h-fit w-[11rem] md:w-[20rem] aspect-[16/9] rounded-lg overflow-hidden relative cursor-pointer">
+          <img src="" class="size-full object-cover" alt="">
+          <div class="overlay absolute top-0 left-0 w-full h-full "></div>
+          <div class="text-overlay absolute top-[.7rem] left-[1rem] w-full h-full text-white font-[be-vietnam] opacity-0 text-xs lg:text-base">
+            Solo Leveling
+          </div>
+        </div>
+      
+      </div>
     </section>
   </main>
 

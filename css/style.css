@@ -172,7 +172,11 @@
     opacity: 1;
 }
 
-/* Manga Section */
+
+/* Common Styling */
+.card-container::-webkit-scrollbar {
+    scrollbar-width: none;
+}
 
 .card-black-overlay .overlay {
     background-color: rgba(0, 0, 0, 0);
