@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="content-language" content="en" />
+    <title>Sign In - ANIMEVRS</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <base href="/Animevrs/">
+  <script type="module" crossorigin src="/Animevrs/assets/signin-CsTYf28X.js"></script>
+  <link rel="modulepreload" crossorigin href="/Animevrs/assets/font-mRQLjLRv.js">
+  <link rel="stylesheet" crossorigin href="/Animevrs/assets/font-DrJntmaI.css">
+  <link rel="stylesheet" crossorigin href="/Animevrs/assets/signin-CO5Wen-A.css">
+</head>
+
+<body>
+    <main>
+        <div id="signup-container">
+            <div id="hero-text">
+                <h1>Explore Anime,</h1>
+                <h3>Explore Yourself</h3>
+            </div>
+
+            <div id="bottom-text">
+                <p>Don't have an account?</p>
+                <a href="#">SignUp</a>
+            </div>
+        </div>
+
+        <div id="signin-container">
+            <div id="signin-wrapper">
+                <h1>Welcome Back to <br><span> Animevrs</span></h1>
+
+                <form autocomplete="off">
+                    <div class="input-container" id="name-container">
+                        <input type="text" placeholder="Username" id="name-input" required>
+                        <p class="error-text">Username must be atmost 8 characters</p>
+                    </div>
+                    <div class="input-container" id="email-container">
+                        <input type="email" placeholder="Email" id="email-input" required>
+                        <p class="error-text" id="email-error"></p>
+                    </div>
+                    <div class="input-container" id="password-container">
+                        <div id="input-wrapper">
+                            <input type="password" placeholder="Password" id="password-input" required>
+                            <button type="button" id="toggle-btn"><i class="ri-eye-line"></i></button>
+                        </div>
+                        <p class="error-text" id="password-error">Password must be atleast 8 characters</p>
+                    </div>
+
+                    <button type="submit" id="signin-btn">Sign In</button>
+
+                    <button type="button" id="google-btn"><i class="ri-google-fill"></i> Sign In with Google</button>
+
+                    <p id="terms-and-conditions">By clicking Sign In you agree with our <a href="#">privacy policy</a>
+                        and <a href="#">terms</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
