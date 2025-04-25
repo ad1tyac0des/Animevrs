@@ -6,7 +6,12 @@
     @apply flex items-center justify-center;
 }
 
-#logo-container h1, #hamburger-panel-logo {
+.flex-between {
+    @apply flex items-center justify-between;
+}
+
+#logo-container h1,
+#hamburger-panel-logo {
     background: url(/assets/videos/logo-video.gif) no-repeat center center;
     background-size: cover;
     -webkit-background-clip: text;
@@ -24,7 +29,7 @@
     grid-template-rows: 9rem 2.5rem 6rem;
     grid-template-columns: 1.6fr 1.7fr 1.9fr;
     gap: .5rem;
-    grid-template-areas: 
+    grid-template-areas:
         "a a b"
         "c d b"
         "c d e";
@@ -78,7 +83,7 @@
     display: grid;
     grid-template-columns: 1.6fr 1.7fr 1.9fr;
     gap: .7rem;
-    grid-template-areas: 
+    grid-template-areas:
         "a a b"
         "c d b"
         "c d e";
@@ -139,4 +144,30 @@
         -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none;
     }
+}
+
+/* Continue Page */
+
+.continue-container::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+
+.continue-item .overlay {
+
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.continue-item .text-overlay {
+
+    transition: opacity 0.3s ease;
+}
+
+.continue-item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.continue-item:hover .text-overlay {
+    opacity: 1;
 }
