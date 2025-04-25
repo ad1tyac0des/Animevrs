@@ -9,7 +9,6 @@ export default {
     extend: {
       colors: {
         'anime-crimson': '#D72638',
-        'anime-orange': '#FF822A',
         'anime-beige': '#F5F3EF',
         'anime-white': '#FBFBFB',
         'anime-graphite': '#262626',
