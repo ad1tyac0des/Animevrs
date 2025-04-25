@@ -5,7 +5,7 @@ function createOverlay() {
     overlay.id = 'search-backdrop';
     overlay.classList.add('fixed', 'inset-0', 'bg-anime-graphite/20', 'backdrop-blur-md', 'opacity-0', 'pointer-events-none');
     overlay.style.zIndex = '5';
-    document.body.appendChild(overlay);
+    document.querySelector('main').appendChild(overlay);
     return overlay;
 }
 
