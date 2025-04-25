@@ -8,6 +8,7 @@ import { checkSignInStateAndUpdate } from './modules/checkSignInStateAndUpdate.j
 import { handleSignOutBtn } from './modules/handleSignOutBtn.js';
 import { handlePfpDropdown } from './modules/handlePfpDropdown.js';
 import { handleMangaScrollSpeed } from './modules/handleMangaScrollSpeed.js';
+import { handleTrendingScrollEffect } from './modules/handleTrendingScrollEffect.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Locomotive Scroll
@@ -22,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     handleSignOutBtn();
     handlePfpDropdown();
     handleMangaScrollSpeed();
+    handleTrendingScrollEffect();
 });

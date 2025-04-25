@@ -17,7 +17,7 @@ export function handleFixedMangaContainer() {
     });
     
     gsap.from(fixedMangaContainer.querySelector("h1"), {
-        opacity: .4, 
+        opacity: 0, 
         y: 20, 
         scrollTrigger: {
             trigger: mangaSection,
@@ -28,7 +28,7 @@ export function handleFixedMangaContainer() {
     })
     
     gsap.from(fixedMangaContainer.querySelector("p"), {
-        opacity: .2, 
+        opacity: 0, 
         y: 20, 
         scrollTrigger: {
             trigger: mangaSection,
@@ -39,7 +39,7 @@ export function handleFixedMangaContainer() {
     })
     
     gsap.from(fixedMangaContainer.querySelector(".see-all-btn"), {
-        opacity: .2, 
+        opacity: 0, 
         y: 20, 
         scrollTrigger: {
             trigger: mangaSection,
