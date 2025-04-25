@@ -7,7 +7,7 @@ export function handleSignOutBtn() {
         localStorage.removeItem("email");
         
         setTimeout(() => {
-            location.href = "signin.html";
+            location.href = "/Animevrs/signin.html";
         }, 500);
     });
 }

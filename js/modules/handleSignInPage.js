@@ -218,7 +218,7 @@ function handleSignInPage() {
             localStorage.setItem("email", emailInput.value);
             setTimeout(() => {
                 form.submit();
-                location.href = "index.html";
+                location.href = "/Animevrs/index.html";
             }, 700);
         } else {
             alert("Fill the fields correctly for successful signin.");
