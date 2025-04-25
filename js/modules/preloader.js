@@ -53,7 +53,7 @@ export function preloader() {
     
     const crimsonContainer = document.querySelector(".crimson-container");
     const crimsonFill = document.querySelector(".crimson-fill");
-    const totalTimeToLoad = 1; // 8s
+    const totalTimeToLoad = 8; // 8s
 
     gsap.to(crimsonFill, {
         width: "100%",
