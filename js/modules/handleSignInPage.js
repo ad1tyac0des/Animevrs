@@ -172,7 +172,7 @@ function handleSignInPage() {
             if (pass.length === 0) {
                 passwordContainer.classList.remove("input-success");
                 passwordContainer.classList.remove("input-error");
-                passwordError.textContent = "Password must be atleast 8 characters";
+                passwordError.textContent = "Password must be atleast 6 characters";
             } else if (!includesUpperCase(pass)) {
                 passwordContainer.classList.remove("input-success");
                 passwordContainer.classList.add("input-error");
@@ -189,10 +189,10 @@ function handleSignInPage() {
                 passwordContainer.classList.remove("input-success");
                 passwordContainer.classList.add("input-error");
                 passwordError.textContent = "Include a special character!";
-            } else if (pass.length < 8) {
+            } else if (pass.length < 6) {
                 passwordContainer.classList.remove("input-success");
                 passwordContainer.classList.add("input-error");
-                passwordError.textContent = "Password must be atleast 8 characters";
+                passwordError.textContent = "Password must be atleast 6 characters";
             } else {
                 passwordContainer.classList.remove("input-error");
                 passwordContainer.classList.add("input-success");
